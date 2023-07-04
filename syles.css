@@ -206,6 +206,8 @@
 
 .main {
   background-color: #131313;
+  display: flex;
+  align-items: center;
 }
 
 .main__container {
@@ -213,12 +215,12 @@
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-self: center;
-  margin: 0 auto;
+  margin: 0px;
   background-color: #131313;
   z-index: 1;
-  width: 100%;
+  width: 10%;
   max-width: 1300px;
-  padding: 0px 50px;
+  padding: 60px 50px;
 }
 
 .main__content h1 {
@@ -298,10 +300,6 @@
 
 .main__img--container {
   text-align: center;
-  /* display: flex;
-  flex-direction: column; 
-  display: inline-block; 
-  display: ;*/
 }
 
 #main__img {
@@ -309,7 +307,7 @@
   width: 70%;
 }
 
-/* Mobile Responsiveness */
+/* Mobile Responsiveness
 @media screen and (max-width: 768px) {
   .main__container {
     display: grid;
@@ -317,13 +315,15 @@
     align-items: center;
     justify-self: center;
     width: 100%;
-    margin: 0 auto;
+    margin: 0;
     height: 10vh;
   }
 
   .main__content {
     text-align: center;
     margin-bottom: 4rem;
+    display: inline-block;
+    align-items: center;
   }
 
   .main__content h1 {
@@ -339,9 +339,9 @@
     margin-top: 1rem;
     font-size: 1.5rem;
   }
-}
+} */
 
-@media screen and (max-width: 480) {
+/* @media screen and (max-width: 480) {
   .main__content h1 {
     font-size: 2rem;
     margin-top: 3rem;
@@ -357,10 +357,14 @@
   }
 
   .main__btn {
-    padding: 12px 36px;
-    margin: 2.5rem 0;
+    padding: 12px 12px;
+    margin: 0rem 0;
   }
-}
+
+  .main__img--container {
+    display: grid;
+  }
+} */
 
 /* Services Section CSS */
 .services {
@@ -371,7 +375,6 @@
   height: 100vh;
 }
 
-/*  Fitter, stronger, happier */
 .services h1 {
   background-color: #7e9702;
   background-image: linear-gradient(
@@ -617,4 +620,44 @@
   flex: 1;
   height: 100%;
   background-color: var(--color-light--1);
+}
+
+.carousel {
+  width: 1200px;
+  margin: 100px auto;
+  background-color: #b2d500;
+  backdrop-filter: #131313;
+  padding: 32px;
+  padding-left: 86px;
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  gap: 135px;
+}
+
+#box__pic {
+  height: 200px;
+  border-radius: 8px;
+  transform: scale(1.5);
+  transform-origin: 90px center;
+}
+
+.about-boxing {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 32px;
+  color: #fff;
+}
+
+.class-title {
+  font-size: 14px;
+  margin-bottom: 4px;
+  color: #fff;
+}
+
+.class-duration {
+  font-size: 12px;
+  color: #fff;
 }
