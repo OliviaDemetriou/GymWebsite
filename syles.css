@@ -32,6 +32,7 @@
   background-color: #ffffff;
   background-image: linear-gradient(to top, #b2d500 0%, #ffffff 100%);
   background-size: 100%;
+  background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -229,6 +230,7 @@
   background-image: linear-gradient(to top, #b2d500 0%, #ffffff 100%);
   background-size: 100%;
   padding: 0px 50px;
+  background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -241,6 +243,7 @@
   background-image: linear-gradient(to top, #5dc5f1 0%, #ffffff 100%);
   background-size: 100%;
   padding: 0px 50px;
+  background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -390,6 +393,38 @@
   margin-top: 5rem;
   margin-bottom: 5rem;
   font-size: 2.5rem;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  text-align: center;
+}
+
+.main-title {
+  background-color: #131313;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 16vh;
+}
+
+.main--title h1 {
+  background-color: #7e9702;
+  background-image: linear-gradient(
+    to right,
+    #ffffff 0%,
+    #f6fed1 0%,
+    #e6f890 21%,
+    #b2d500 52%,
+    #8aa504 78%,
+    #319702 100%
+  );
+  background-size: 100%;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  font-size: 2.5rem;
+  background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -622,13 +657,22 @@
   background-color: var(--color-light--1);
 }
 
+.carousel-background {
+  background-color: #131313;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
 .carousel {
   width: 1200px;
   margin: 100px auto;
   background-color: #b2d500;
-
+  position: relative;
   padding: 32px;
   padding-left: 86px;
+  padding-right: 48px;
   border-radius: 8px;
 
   display: flex;
@@ -641,6 +685,7 @@
   border-radius: 8px;
   transform: scale(1.5);
   transform-origin: 90px center;
+  box-shadow: 0 12px 24px rgba(255, 255, 255, 0.5);
 }
 
 .about-boxing {
@@ -660,4 +705,65 @@
 .class-duration {
   font-size: 12px;
   color: #fff;
+}
+
+/* Arrow icons */
+.classes__btn {
+  background-color: #fff;
+  border: none;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 12px 24px rgb(255, 255, 255, 0.5);
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn--left {
+  /* In relation to parent element */
+  left: 0;
+  top: 50%;
+
+  /* In relation to element itsself */
+  transform: translate(-50%, -50%);
+}
+
+.btn--right {
+  right: 0;
+  top: 50%;
+  /* In relation to element itsself */
+  transform: translate(50%, -50%);
+}
+
+.btn-icon {
+  height: 40px;
+  width: 40px;
+  stroke: #35b8f1;
+}
+
+.dots {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 32px);
+
+  display: flex;
+  gap: 12px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  background-color: #fff;
+  border: 2px solid #35b8f1;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot--fill {
+  background-color: #35b8f1;
 }
