@@ -668,43 +668,17 @@
 .carousel {
   width: 1200px;
   margin: 100px auto;
-  background-color: #b2d500;
-  position: relative;
+  background-color: hsl(70, 100%, 42%);
+  position: absolute;
   padding: 32px;
+  padding-bottom: 80px;
   padding-left: 86px;
   padding-right: 48px;
   border-radius: 8px;
 
-  display: flex;
   align-items: center;
   gap: 135px;
-}
-
-#box__pic {
-  height: 200px;
-  border-radius: 8px;
-  transform: scale(1.5);
-  transform-origin: 90px center;
-  box-shadow: 0 12px 24px rgba(255, 255, 255, 0.5);
-}
-
-.about-boxing {
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.5;
-  margin-bottom: 32px;
-  color: #fff;
-}
-
-.class-title {
-  font-size: 14px;
-  margin-bottom: 4px;
-  color: #fff;
-}
-
-.class-duration {
-  font-size: 12px;
-  color: #fff;
+  /* overflow: hidden; */
 }
 
 /* Arrow icons */
@@ -717,26 +691,22 @@
   border-radius: 50%;
   box-shadow: 0 12px 24px rgb(255, 255, 255, 0.5);
   cursor: pointer;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .btn--left {
   /* In relation to parent element */
-  left: 0;
-  top: 50%;
+  left: 11%;
+  top: 51%;
 
   /* In relation to element itsself */
-  transform: translate(-50%, -50%);
+  transform: translate(100%, 65%);
 }
 
 .btn--right {
-  right: 0;
-  top: 50%;
+  right: 11%;
+  top: 51%;
   /* In relation to element itsself */
-  transform: translate(50%, -50%);
+  transform: translate(-100%, 65%);
 }
 
 .btn-icon {
@@ -767,3 +737,179 @@
 .dot--fill {
   background-color: #35b8f1;
 }
+
+/* ///////////////....  SLIDE 1 ....///////////////*/
+
+#box__pic {
+  height: 200px;
+  border-radius: 8px;
+  transform: scale(1.5);
+  transform-origin: 90px center;
+  box-shadow: 0 0px 20px 5px rgba(255, 255, 255, 0.5);
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  overflow: hidden;
+}
+
+.about-boxing {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 32px;
+  color: #fff;
+}
+
+.title-box {
+  font-size: 14px;
+  margin-bottom: 4px;
+  color: #fff;
+}
+
+.duration-box {
+  font-size: 12px;
+  color: #fff;
+}
+
+/* ///////////////....  SLIDE 2 ....///////////////*/
+
+#yoga__pic {
+  height: 200px;
+  border-radius: 8px;
+  transform: scale(1.5);
+  transform-origin: 90px center;
+  box-shadow: 0 0px 20px 5px rgba(255, 255, 255, 0.5);
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.about-yoga {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 32px;
+
+  color: #fff;
+}
+
+.title-yoga {
+  font-size: 14px;
+  margin-bottom: 4px;
+  color: #fff;
+}
+
+.duration-yoga {
+  font-size: 12px;
+  color: #fff;
+}
+
+/* ///////////////....  SLIDE 3 ....///////////////*/
+#lifting--beg__pic {
+  height: 200px;
+  border-radius: 8px;
+  transform: scale(1.5);
+  transform-origin: 90px center;
+  box-shadow: 0 0px 20px 5px rgba(255, 255, 255, 0.5);
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.about-lifting-beg {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 32px;
+  color: #fff;
+}
+
+.title-beg {
+  font-size: 14px;
+  margin-bottom: 4px;
+  color: #fff;
+}
+
+.duration-beg {
+  font-size: 12px;
+  color: #fff;
+}
+/* ///////////////....  SLIDE 4 ....///////////////*/
+#lifitng--adv__pic {
+  height: 200px;
+  border-radius: 8px;
+  transform: scale(1.5);
+  transform-origin: 90px center;
+  box-shadow: 0 0px 20px 5px rgba(255, 255, 255, 0.5);
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.about-lifting-adv {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 32px;
+  color: #fff;
+}
+
+.title-adv {
+  font-size: 14px;
+  margin-bottom: 4px;
+  color: #fff;
+}
+
+.duration-adv {
+  font-size: 12px;
+  color: #fff;
+}
+/* ///////////////....  SLIDE 5 ....///////////////*/
+#core__pic {
+  height: 200px;
+  border-radius: 8px;
+  transform: scale(1.5);
+  transform-origin: 90px center;
+  box-shadow: 0 0px 20px 5px rgba(255, 255, 255, 0.5);
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.about-core {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 32px;
+  color: #fff;
+  padding-left: 450px;
+}
+
+.title-core {
+  font-size: 14px;
+  margin-bottom: 4px;
+  color: #fff;
+  padding-left: 450px;
+}
+
+.duration-core {
+  font-size: 12px;
+  color: #fff;
+  padding-left: 450px;
+}
+
+/* ///////////TRYING TO MAKE THE BOX FIT ///////
+ive added padding-left: 450px; into each text section in the core section  //////*/
+/* 
+might be this:
+  display: flex;
+  position: absolute; 
+
+but tis also makes it more right :
+  padding-left: 450px; 
+  */
+
+/* .slide__1 .slide__2 .slide__3 .slide__4 .slide__5 {
+  display: flex;
+  position: absolute;
+} */
