@@ -657,15 +657,23 @@
   background-color: var(--color-light--1);
 }
 
-.carousel-background {
-  background-color: #131313;
+.slider {
+  max-width: 100%;
+  height: 50rem;
+  margin: 0 auto;
+  position: relative;
+
+  /* IN THE END */
+  /* overflow: hidden; */
+  background: #131313;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100vh;
 }
 
-.carousel {
+.slide {
+  /* visibility: hidden; */
   width: 1200px;
   margin: 100px auto;
   background-color: hsl(70, 100%, 42%);
@@ -678,7 +686,7 @@
 
   align-items: center;
   gap: 135px;
-  /* overflow: hidden; */
+  transition: transform 1.8s;
 }
 
 /* Arrow icons */
@@ -696,7 +704,7 @@
 .btn--left {
   /* In relation to parent element */
   left: 11%;
-  top: 51%;
+  top: 22%;
 
   /* In relation to element itsself */
   transform: translate(100%, 65%);
@@ -704,7 +712,7 @@
 
 .btn--right {
   right: 11%;
-  top: 51%;
+  top: 22%;
   /* In relation to element itsself */
   transform: translate(-100%, 65%);
 }
@@ -738,9 +746,46 @@
   background-color: #35b8f1;
 }
 
+/*//////////////new experiment //*/
+
+.text-area {
+  color: #ffffff;
+  margin-left: 450px;
+  margin-right: 0;
+  width: 40rem;
+}
+
+#pic {
+  height: 200px;
+  border-radius: 8px;
+  transform: scale(1.5);
+  transform-origin: 90px center;
+  box-shadow: 0 0px 20px 5px rgba(255, 255, 255, 0.5);
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  /* overflow: hidden; */
+}
+
+.about-text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 32px;
+}
+
+.title-text {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.duration-text {
+  font-size: 12px;
+}
+
 /* ///////////////....  SLIDE 1 ....///////////////*/
 
-#box__pic {
+/* #box__pic {
   height: 200px;
   border-radius: 8px;
   transform: scale(1.5);
@@ -769,11 +814,11 @@
 .duration-box {
   font-size: 12px;
   color: #fff;
-}
+} */
 
 /* ///////////////....  SLIDE 2 ....///////////////*/
 
-#yoga__pic {
+/* #yoga__pic {
   height: 200px;
   border-radius: 8px;
   transform: scale(1.5);
@@ -802,10 +847,10 @@
 .duration-yoga {
   font-size: 12px;
   color: #fff;
-}
+} */
 
 /* ///////////////....  SLIDE 3 ....///////////////*/
-#lifting--beg__pic {
+/* #lifting--beg__pic {
   height: 200px;
   border-radius: 8px;
   transform: scale(1.5);
@@ -833,9 +878,9 @@
 .duration-beg {
   font-size: 12px;
   color: #fff;
-}
+} */
 /* ///////////////....  SLIDE 4 ....///////////////*/
-#lifitng--adv__pic {
+/* #lifitng--adv__pic {
   height: 200px;
   border-radius: 8px;
   transform: scale(1.5);
@@ -863,9 +908,9 @@
 .duration-adv {
   font-size: 12px;
   color: #fff;
-}
+} */
 /* ///////////////....  SLIDE 5 ....///////////////*/
-#core__pic {
+/* #core__pic {
   height: 200px;
   border-radius: 8px;
   transform: scale(1.5);
@@ -896,7 +941,7 @@
   font-size: 12px;
   color: #fff;
   padding-left: 450px;
-}
+} */
 
 /* ///////////TRYING TO MAKE THE BOX FIT ///////
 ive added padding-left: 450px; into each text section in the core section  //////*/
