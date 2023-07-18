@@ -49,3 +49,12 @@ const prevSlide = function () {
 
 btnRight.addEventListener("click", nextSlide);
 btnLeft.addEventListener("click", prevSlide);
+
+// const active = function () {
+//   if (curSlide = 0) {
+
+//   } else {
+
+//   }
+// }
+$(".single-item").slick();

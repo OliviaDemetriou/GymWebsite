@@ -958,3 +958,137 @@ but tis also makes it more right :
   display: flex;
   position: absolute;
 } */
+
+/*/// Memberships section ////*/
+.memberships {
+  background: #131313;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.memberships__container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.memberships__card {
+  margin: 3rem;
+  height: 525px;
+  width: 300px;
+  border-radius: 6px;
+  background-image: url("/images/overhead\ press.jpg");
+  background-size: cover;
+  position: relative;
+  color: #fff;
+  box-shadow: 0 0px 30px 5px rgba(53, 184, 241, 0.5);
+}
+
+.memberships__card {
+  background-image: url("/images/boxing.jpg");
+}
+
+.memberships h1 {
+  position: relative;
+  padding-left: 30px;
+  padding-top: 30px;
+  font-size: 40px;
+}
+
+.memberships h2 {
+  position: relative;
+  padding-left: 30px;
+  font-size: 17;
+}
+
+.memberships h3 {
+  position: relative;
+  left: 30px;
+  padding-left: 30px;
+  font-size: 10px;
+  font-weight: lighter;
+}
+
+.memberships ul {
+  position: relative;
+  top: 40px;
+  left: 30px;
+  padding-right: 50px;
+  list-style-position: inside;
+}
+
+.memberships__card button {
+  color: #fff;
+}
+
+.memberships__card button {
+  color: #131313;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: #5dc5f1;
+  position: absolute;
+  top: 440px;
+  left: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.memberships__card button:hover {
+  background: rgb(228, 255, 99);
+  transition: all 0.3s ease;
+  color: #131313;
+}
+
+.memberships__card:hover {
+  transform: scale(1.075);
+  transition: 0.2s ease-in;
+  cursor: pointer;
+  box-shadow: 0 0px 20px 5px rgba(228, 255, 99, 0.5);
+}
+
+/* li {
+  list-style-image: "navbar__logo";
+} */
+
+ul.memberships__card {
+  list-style: none;
+}
+
+li.memberships__card li:before {
+  display: inline-block;
+  margin-left: -20px;
+  padding-right: 5px;
+  width: 15px;
+
+  /* Here you can place the food icon or image you want */
+  content: "fa-solid fa-bolt";
+  font-family: FontAwesome;
+}
+/* @media screen and (max-width: 960px) {
+  .memberships {
+    height: 1600px;
+  }
+
+  .memberships h1 {
+    font-size: 2rem;
+    margin-top: 12rem;
+  }
+} */
+
+/* @media screen and (max-width: 480px) {
+  .memberships {
+    height: 1400px;
+  }
+
+  .memberships h1 {
+    font-size: 1.2rem;
+  }
+
+  .memberships__card {
+    width: 300px;
+  }
+} */
